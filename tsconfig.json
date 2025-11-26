@@ -1,5 +1,9 @@
 {
   "extends": "@react-native/typescript-config",
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "src/component/Calcultaor/AddCalCulator.js"
+  ],
   "exclude": ["**/node_modules", "**/Pods"]
 }
