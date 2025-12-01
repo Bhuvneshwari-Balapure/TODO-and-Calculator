@@ -1,18 +1,14 @@
-import { TouchableOpacity, StyleSheet, View, Text } from "react-native";
+import { TouchableOpacity, StyleSheet, View, Text } from 'react-native';
 
 export default function Buttons({
-  title,
-  type,
-  onPress,
-}: {
-  title: String;
-  type: "operator" | "number";
-  onPress: Function;
+  title = String,
+  type = 'operator' | 'number',
+  onPress = Function,
 }) {
   return (
     <View>
       <TouchableOpacity style={styles.button} onPress={onPress}>
-        <Text style={{ fontSize: 30, color: "white" }}>{title}</Text>
+        <Text style={{ fontSize: 30, color: 'white' }}>{title}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -24,9 +20,9 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     // padding: 20,
     margin: 2,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
 
     // backgroundColor: "gray",
   },
